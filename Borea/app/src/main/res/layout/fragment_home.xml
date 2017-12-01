@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/bottomtab_1"
+    tools:context="uqac.eslie.nova.Fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grayColor"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/welcome_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bienvenue,"
+                android:textAlignment="center"
+                android:textColor="@color/primaryTexte"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/welcome_name_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <fragment
+                android:id="@+id/fragment2"
+                android:name="uqac.eslie.nova.Fragments.ImageFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/button_addCarPooling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/ic_directions_car_black_24px"
+                app:backgroundTint="@color/colorPrimaryLight" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/button_addPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/ic_add_a_photo_black_24dp"
+                app:backgroundTint="@color/colorPrimaryLight" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
